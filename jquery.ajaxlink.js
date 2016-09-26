@@ -3,7 +3,6 @@ $.fn.ajaxlinkList = function () {
     /* 绑定ajax链接点击事件 */
     $(this).on('click', '.ajaxlink', { target: target }, function (event) {
         event.preventDefault();
-        event.stopPropagation();
 
         this.target = event.data.target;
 
